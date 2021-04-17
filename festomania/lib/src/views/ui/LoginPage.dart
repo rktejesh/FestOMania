@@ -1,15 +1,15 @@
 import 'dart:ui';
-import 'package:festomania/src/views/ui/LoadingPage.dart';
+import 'package:festomania/src/views/ui/ChoicePage.dart';
+import 'package:festomania/src/views/ui/Reset.dart';
+import 'package:festomania/src/views/utils/LandingPage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:festomania/src/views/ui/MainPage.dart';
+import 'package:form_field_validator/form_field_validator.dart';
 
 class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();
 }
-
-bool loading = false;
 
 class _LoginPageState extends State<LoginPage> {
   String errorText;
@@ -32,8 +32,8 @@ class _LoginPageState extends State<LoginPage> {
               filter: ImageFilter.blur(sigmaX: 6, sigmaY: 6));
         });
   }
-
   final FirebaseAuth auth = FirebaseAuth.instance;
+  GlobalKey<FormState> formkey = GlobalKey<FormState>();
   String _email = "";
   String _password = "";
   @override
@@ -57,7 +57,7 @@ class _LoginPageState extends State<LoginPage> {
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: const AssetImage(
-                            "lib/src/assests/images/loginpageGraphic.png"),
+                            "lib/src/assets/images/loginpageGraphic.png"),
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -75,44 +75,109 @@ class _LoginPageState extends State<LoginPage> {
                     textAlign: TextAlign.left,
                   ),
                 ),
-                Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: TextField(
-                        style: TextStyle(color: Colors.blue),
-                        keyboardType: TextInputType.emailAddress,
-                        decoration: InputDecoration(
-                          contentPadding: EdgeInsets.only(
-                              left: 30, right: 20, top: 20, bottom: 20),
-                          labelText: 'Username/Email',
+                Form(
+                  autovalidateMode: AutovalidateMode.always,
+                  key: formkey,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: TextFormField(
+                          style: TextStyle(color: Colors.white),
+                          keyboardType: TextInputType.emailAddress,
+                          decoration: InputDecoration(
+                              contentPadding: EdgeInsets.only(
+                                  left: 30, right: 20, top: 20, bottom: 20),
+                              labelText: 'Username/Email',
+                              focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(40),
+                                  borderSide: BorderSide(
+                                    color: Colors.white,
+                                  )),
+                              enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(40),
+                                  borderSide: BorderSide(
+                                    color: Colors.white,
+                                  )),
+                              disabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(40),
+                                  borderSide: BorderSide(
+                                    color: Colors.white,
+                                  )),
+                              errorBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(40),
+                                  borderSide: BorderSide(
+                                    color: Colors.white,
+                                  )),
+                              focusedErrorBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(40),
+                                  borderSide: BorderSide(
+                                    color: Colors.white,
+                                  )),
+                              labelStyle:
+                              TextStyle(fontSize: 26, color: Colors.white)),
+                          onChanged: (value) {
+                            setState(() {
+                              _email = value.trim();
+                            });
+                          },
+                          validator: MultiValidator([
+                            RequiredValidator(errorText: "Required"),
+                            EmailValidator(
+                                errorText: "Not valid Email pattern"),
+                          ]),
                         ),
-
-                        onChanged: (value) {
-                          setState(() {
-                            _email = value.trim();
-                          });
-                        },
                       ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 30, bottom: 30, right: 15, left: 15),
-                      child: TextField(
-                        style: TextStyle(color: Colors.blue),
-                        keyboardType: TextInputType.visiblePassword,
-                        obscureText: true,
-                        decoration: InputDecoration(
-                          labelText: 'Password',
+                      Padding(
+                        padding: const EdgeInsets.only(
+                            top: 30, bottom: 30, right: 15, left: 15),
+                        child: TextFormField(
+                          style: TextStyle(color: Colors.white),
+                          keyboardType: TextInputType.visiblePassword,
+                          obscureText: true,
+                          decoration: InputDecoration(
+                              contentPadding: EdgeInsets.only(
+                                  left: 30, right: 20, top: 20, bottom: 20),
+                              labelText: 'Password',
+                              focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(40),
+                                  borderSide: BorderSide(
+                                    color: Colors.white,
+                                  )),
+                              enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(40),
+                                  borderSide: BorderSide(
+                                    color: Colors.white,
+                                  )),
+                              disabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(40),
+                                  borderSide: BorderSide(
+                                    color: Colors.white,
+                                  )),
+                              errorBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(40),
+                                  borderSide: BorderSide(
+                                    color: Colors.white,
+                                  )),
+                              focusedErrorBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(40),
+                                  borderSide: BorderSide(
+                                    color: Colors.white,
+                                  )),
+                              labelStyle:
+                              TextStyle(fontSize: 26, color: Colors.white)),
+                          onChanged: (value) {
+                            setState(() {
+                              _password = value.trim();
+                            });
+                          },
+                          validator: MultiValidator([
+                            RequiredValidator(errorText: "Required"),
+                          ]),
                         ),
-                        onChanged: (value) {
-                          setState(() {
-                            _password = value.trim();
-                          });
-                        },
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 Container(
                   alignment: Alignment.centerRight,
@@ -120,11 +185,10 @@ class _LoginPageState extends State<LoginPage> {
                   const EdgeInsets.only(bottom: 30, right: 15, left: 15),
                   child: InkWell(
                     child: TextButton(
-                      child: Text(
-                        'Forgot Password?',
-                        style: TextStyle(fontSize: 20, color: Colors.white), ),
+                      child: Text('Forgot Password?',
+                        style: TextStyle(fontSize: 20, color: Colors.white),),
                       onPressed: () => Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => LoadingPage()),
+                        MaterialPageRoute(builder: (context) => ResetScreen()),
                       ),
                     ),
                   ),
@@ -132,8 +196,8 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(
                   width: double.infinity,
                   child: Padding(
-                    padding:
-                    EdgeInsets.only(top: 20, bottom: 20, left: 60, right: 60),
+                    padding: EdgeInsets.only(
+                        top: 20, bottom: 20, left: 60, right: 60),
                     child: Container(
                       decoration: BoxDecoration(
                           borderRadius: const BorderRadius.all(
@@ -154,25 +218,28 @@ class _LoginPageState extends State<LoginPage> {
                             });
                             await auth.signInWithEmailAndPassword(
                                 email: _email, password: _password);
-                            Navigator.of(context).pushReplacement(MaterialPageRoute(
-                                builder: (context) => MainPageUpcoming()));
+                            Navigator.of(context).pushReplacement(
+                                MaterialPageRoute(
+                                    builder: (context) => LandingPage()));
                           } on FirebaseAuthException catch (e) {
                             if (e.code == 'invalid-email') {
                               setState(() {
                                 loading = false;
-                                errorText = "The email specified does not exist.";
+                                errorText="The email specified does not exist.";
                                 _showDialog();
                               });
-                            } else if (e.code == 'wrong-password') {
+                            }
+                            else if (e.code == 'wrong-password') {
                               loading = false;
                               errorText = "The password is incorrect.";
                               _showDialog();
-                            } else if (e.code == 'user-not-found') {
+                            }
+                            else if (e.code == 'user-not-found') {
                               loading = false;
-                              errorText =
-                              "This email is not registered or already has an account.";
+                              errorText = "This email is not registered or already has an account.";
                               _showDialog();
-                            } else {
+                            }
+                            else {
                               setState(() {
                                 loading = false;
                               });
