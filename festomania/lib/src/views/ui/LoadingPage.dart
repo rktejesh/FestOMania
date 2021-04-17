@@ -1,4 +1,4 @@
-import 'package:festomania/src/views/ui/ChoicePage.dart';
+import 'package:festomania/src/views/utils/LandingPage.dart';
 import 'package:festomania/src/views/utils/Logo.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
@@ -21,12 +21,12 @@ class _LoadingPageState extends State<LoadingPage> {
     );
   }
   startTime() async {
-    var duration = new Duration(seconds: 4);
+    var duration = new Duration(seconds: 3);
     return new Timer(duration, route);
   }
   route() {
     Navigator.pushReplacement(context, MaterialPageRoute(
-        builder: (context) => ChoicePage()
+        builder: (context) => LandingPage()
     )
     );
   }
