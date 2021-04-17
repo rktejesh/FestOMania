@@ -20,7 +20,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2099e7f2-928e-4f4c-9397-320d91d69309" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/FestOMania-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FestOMania-1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/LoginPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/LoginPage.dart" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/EventPage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/TTCollection.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/TTLive.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/utils/search.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/Images/loginpageGraphic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/Images/signuppagegraphic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/CodingEvent.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/CodingEvent.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/CtfEvent.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/CtfEvent.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/Hackathon.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/Hackathon.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/MainPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/MainPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/SignupPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/SignupPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/TechnicalTalks.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/TechnicalTalks.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/utils/AppDrawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/utils/AppDrawer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/pubspec.yaml" afterDir="false" />
+>>>>>>> d87755395469be6a2845cd6c24672e6cbbdf2ebe
+>>>>>>> 3790e5658042600899012c065d39fb75f550f36b
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,9 +117,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="287" y="102" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1618634565910" />
-    <state x="659" y="228" key="FileChooserDialogImpl" timestamp="1618635398796">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1618677472193">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1618677472193" />
     <state x="659" y="228" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618635398796" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1618634460780">
       <screen x="0" y="0" width="1536" height="824" />
