@@ -100,14 +100,14 @@ class _AppDrawerState extends State<AppDrawer> {
           ListTile(
             title: Text('Register Your College'),
             onTap:() {
-              Navigator.of(context).pop();
+             Navigator.of(context).pop();
               Navigator.of(context).push(MaterialPageRoute(builder: (context) => RegisterClgEvent(),));
             },
           ),
           ListTile(
             title: Text('About Us'),
             onTap:() {
-              Navigator.of(context).pop();
+             Navigator.of(context).pop();
               Navigator.of(context).push(MaterialPageRoute(builder: (context) => AboutUs(),));
             },
           ),
