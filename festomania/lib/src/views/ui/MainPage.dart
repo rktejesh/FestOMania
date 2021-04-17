@@ -1,45 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
 import 'package:sliver_tools/sliver_tools.dart';
 import 'config.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-     home: MainPage(),
-    );
-  }
-}
-class MainPage extends StatefulWidget {
-  @override
-  _MainPageState createState() => _MainPageState();
-}
-
-class _MainPageState extends State<MainPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
-=======
-      home: MainPageUpcoming(),
-    );
-  }
-}
+import 'package:flutter_svg/flutter_svg.dart';
 
 class MainPageUpcoming extends StatefulWidget {
   @override
