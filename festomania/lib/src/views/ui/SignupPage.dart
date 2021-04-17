@@ -13,7 +13,6 @@ class SignupPage extends StatefulWidget {
 
 class _SignupPageState extends State<SignupPage> {
   String errorText = "";
-
   _showDialog() {
     showDialog(
         context: context,
@@ -242,7 +241,7 @@ class _SignupPageState extends State<SignupPage> {
                               RequiredValidator(errorText: "Required"),
                               MinLengthValidator(8,
                                   errorText:
-                                  "Password must be a minimum length of 8 "),
+                                      "Password must be a minimum length of 8 "),
                             ]),
                           ),
                         ),
@@ -290,7 +289,7 @@ class _SignupPageState extends State<SignupPage> {
                             //validator MultiValidator([
                             //RequiredValidator(errorText: "Required"),
                             validator: (_confirmPassword) => MatchValidator(
-                                errorText: "Password did not matched!")
+                                    errorText: "Password did not matched!")
                                 .validateMatch(_password, _confirmPassword),
                           ),
                           //])
