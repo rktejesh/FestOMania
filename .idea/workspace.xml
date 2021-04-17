@@ -20,16 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2099e7f2-928e-4f4c-9397-320d91d69309" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/festomania/android/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/ChoicePage.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/LoginPage.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/SignupPage.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/utils/database.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festomania/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festomania/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festomania/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festomania/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festomania/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
