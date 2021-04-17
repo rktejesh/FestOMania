@@ -56,8 +56,8 @@ class _ChoicePageState extends State<ChoicePage> {
         loading = true;
       });
       final GitHubSignIn gitHubSignIn = GitHubSignIn(
-          clientId: "6296142f6ced441635e8",
-          clientSecret: "f51072121bf6b004bca22f2ca300a64f418e3b39",
+          clientId: "ce0106e536d0adadd613",
+          clientSecret: "c52567186408a8a28d3533789a1d24bc4e4efb24",
           redirectUrl:
           'https://supernova-433f4.firebaseapp.com/__/auth/handler');
       final result = await gitHubSignIn.signIn(context);
