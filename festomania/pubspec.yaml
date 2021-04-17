@@ -70,14 +70,17 @@ flutter:
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
-fonts:
-  - family: Forte
-    fonts:
-      - asset: lib/src/assets/fonts/FORTE.TTF
-  - family: Alegreya
-    fonts:
-      - asset: lib/src/assets/fonts/Alegreya-Regular.ttf
-      - asset: lib/src/assets/fonts/Alegreya-SemiBold.ttf
+  assets:
+    - lib/src/assests/images/
+
+  fonts:
+    - family: Forte
+      fonts:
+        - asset: lib/src/assests/fonts/FORTE.TTF
+    - family: Alegreya
+      fonts:
+        - asset: lib/src/assests/fonts/Alegreya-Regular.ttf
+        - asset: lib/src/assests/fonts/Alegreya-SemiBold.ttf
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
 
