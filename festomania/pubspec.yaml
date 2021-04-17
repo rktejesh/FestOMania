@@ -44,12 +44,12 @@ dev_dependencies:
   cloud_firestore: ^1.0.4
   flutter_spinkit: ^4.1.2
   flutter_svg: ^0.21.0+1
+  material_floating_search_bar: ^0.3.3
   form_field_validator: ^1.1.0
   flutter_swiper_null_safety:
     git:
       url: https://github.com/lianyagang/flutter_swiper_null_safety.git
       ref: feature/flutter_swipter2.0
-
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -69,6 +69,7 @@ flutter:
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
+
 
   assets:
     - lib/src/assets/images/
