@@ -72,44 +72,44 @@ class _AppDrawerState extends State<AppDrawer> {
             title: Text('Coding Events'),
             onTap:() {
               Navigator.of(context).pop();
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => null,));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => CodingEventPage(),));
             },
           ),
           ListTile(
             title: Text('Hackathons'),
             onTap:() {
               Navigator.of(context).pop();
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => null,));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => HackathonsPage(),));
             },
           ),
           ListTile(
             title: Text('Ctf Events'),
             onTap:() {
               Navigator.of(context).pop();
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => null,));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => CtfEventPage(),));
             },
           ),
           ListTile(
             title: Text('Technical Talks'),
             onTap:() {
               Navigator.of(context).pop();
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => null,));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => TechnicalTalk(),));
             },
           ),
           Divider(),
           ListTile(
             title: Text('Register Your College'),
-            onTap:() {
-              Navigator.of(context).pop();
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => null,));
-            },
+            //onTap:() {
+             // Navigator.of(context).pop();
+              //Navigator.of(context).push(MaterialPageRoute(builder: (context) => RegisterClgEvent(),));
+            //},
           ),
           ListTile(
             title: Text('About Us'),
-            onTap:() {
-              Navigator.of(context).pop();
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => null,));
-            },
+            //onTap:() {
+             // Navigator.of(context).pop();
+              //Navigator.of(context).push(MaterialPageRoute(builder: (context) => AboutUs(),));
+            //},
           ),
           ListTile(
             title: Text('Signout'),
