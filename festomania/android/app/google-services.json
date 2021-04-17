@@ -52,6 +52,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "859622222007-euqffk164a1b4mlvok21o2qptnm1m5r7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.festomania",
+            "certificate_hash": "d62ff1a038e4f1bfe18effe89019a7ef415d8c8d"
+          }
+        },
+        {
           "client_id": "859622222007-fd0kgh4269c30abvn32t1aakqlf4bvm2.apps.googleusercontent.com",
           "client_type": 3
         }
