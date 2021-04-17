@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:ui';
 import 'package:festomania/src/views/ui/LoginPage.dart';
+import 'package:festomania/src/views/ui/SignupPage.dart';
 import 'package:festomania/src/views/utils/Logo.dart';
 import 'package:festomania/src/views/utils/database.dart';
 import 'package:festomania/src/views/utils/loading.dart';
@@ -232,6 +233,10 @@ class _ChoicePageState extends State<ChoicePage> {
                             ]
                         ),
                         child: OutlinedButton(
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => LoginPage(),));
+                          },
                           style: ButtonStyle(
                             padding: MaterialStateProperty.all(EdgeInsets.only(left: 45, right: 45, top: 3,bottom: 3)
                             ),
@@ -249,14 +254,10 @@ class _ChoicePageState extends State<ChoicePage> {
                               color: const Color(0xff1c69f0),
                             ),
                           ),
-                          onPressed: () => Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => LoginPage()),               
-                    ),
                         ),
                       ),
                     ),
                   ),
-                  
                   Padding(
                     padding: EdgeInsets.only(top: 20,bottom: 25,right: 45,left: 45),
                     child: SizedBox(
@@ -270,11 +271,15 @@ class _ChoicePageState extends State<ChoicePage> {
                               BoxShadow(
                                 color: Color.fromRGBO(149, 157, 165, 0.1),
                                 offset: Offset(0, 0),
-                                blurRadius: 24,
+                                blurRadius: 16,
                               )
                             ]
                         ),
                         child: OutlinedButton(
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => SignupPage(),));
+                          },
                           style: ButtonStyle(
                             padding: MaterialStateProperty.all(EdgeInsets.only(left: 45, right: 45, top: 3,bottom: 3)
                             ),
@@ -284,7 +289,6 @@ class _ChoicePageState extends State<ChoicePage> {
                                 RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20))),
                           ),
-                          onPressed: () {  },
                           child: Text(
                             'Sign up',
                             style: TextStyle(
