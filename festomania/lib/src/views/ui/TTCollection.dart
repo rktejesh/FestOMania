@@ -2,12 +2,7 @@ import 'package:festomania/src/views/ui/config.dart';
 import 'package:festomania/src/views/utils/search.dart';
 import 'package:flutter/material.dart';
 
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
+class Collection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,21 +11,21 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CodingEventPage(),
+      home: TTCollection(),
     );
   }
 }
 
-class CodingEventPage extends StatefulWidget {
+class TTCollection extends StatefulWidget {
   @override
-  _CodingEventPageState createState() => _CodingEventPageState();
+  _TTCollectionState createState() => _TTCollectionState();
 }
 
-class _CodingEventPageState extends State<CodingEventPage> {
+class _TTCollectionState extends State<TTCollection> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0xffedeff8),
       body: SafeArea(
         top: true,
         child: Stack(
@@ -42,11 +37,11 @@ class _CodingEventPageState extends State<CodingEventPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(5.0),
                         child: Align(
                           alignment: Alignment.topCenter,
                           child: Text(
-                            'Coding Events',
+                            'Collection',
                             style: TextStyle(
                               fontFamily: 'Alegreya',
                               fontSize: 27,
@@ -85,7 +80,8 @@ class _CodingEventPageState extends State<CodingEventPage> {
                     ]
                 )
             ),
-            SearchBar(searchBarTitle: "Coding Events"),
+            SearchBar(searchBarTitle: "Collection",
+            )
           ],
         ),
       ),
