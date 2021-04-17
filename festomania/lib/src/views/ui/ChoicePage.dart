@@ -284,6 +284,7 @@ class _ChoicePageState extends State<ChoicePage> {
                                 RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20))),
                           ),
+                          onPressed: () {  },
                           child: Text(
                             'Sign up',
                             style: TextStyle(
