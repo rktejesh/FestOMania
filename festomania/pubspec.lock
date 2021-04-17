@@ -15,6 +15,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  bubble_tab_indicator:
+    dependency: "direct dev"
+    description:
+      name: bubble_tab_indicator
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.6"
   characters:
     dependency: transitive
     description:
@@ -160,6 +167,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.0"
+  flutter_swiper_null_safety:
+    dependency: "direct dev"
+    description:
+      path: "."
+      ref: "feature/flutter_swipter2.0"
+      resolved-ref: "2d37ef78e73e38484c888ffa3ae60f9487a2396d"
+      url: "https://github.com/lianyagang/flutter_swiper_null_safety.git"
+    source: git
+    version: "1.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -280,6 +296,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  sliver_tools:
+    dependency: "direct dev"
+    description:
+      name: sliver_tools
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.1"
   source_span:
     dependency: transitive
     description:
