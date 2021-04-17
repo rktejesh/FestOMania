@@ -106,10 +106,10 @@ class _AppDrawerState extends State<AppDrawer> {
           ),
           ListTile(
             title: Text('About Us'),
-            onTap:() {
-              Navigator.of(context).pop();
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => AboutUs(),));
-            },
+            //onTap:() {
+              //Navigator.of(context).pop();
+              //Navigator.of(context).push(MaterialPageRoute(builder: (context) => AboutUs(),));
+            //},
           ),
           ListTile(
             title: Text('Signout'),
