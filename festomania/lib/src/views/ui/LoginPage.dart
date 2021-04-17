@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:festomania/src/views/ui/Reset.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:festomania/src/views/ui/MainPage.dart';
@@ -82,8 +83,13 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ],
             ),
-            Text('Forgot Password?',
-              style: TextStyle(fontSize: 20, color: Colors.blue),),
+            TextButton(
+                      child: Text('Forgot Password?',
+                      style: TextStyle(fontSize: 20, color: Colors.blueAccent),),
+                      onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => ResetScreen()),               
+                    ),
+                  ),
             Padding(
               padding: EdgeInsets.only(
                   top: 20, bottom: 20, left: 60, right: 60),
