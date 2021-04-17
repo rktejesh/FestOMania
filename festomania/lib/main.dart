@@ -1,3 +1,4 @@
+import 'package:festomania/src/views/ui/LoadingPage.dart';
 import 'package:flutter/material.dart';
 import 'package:festomania/src/views/ui/ChoicePage.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
 
 
       ),
-      home: ChoicePage(),
+      home: LoadingPage(),
     );
   }
 }
