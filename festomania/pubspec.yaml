@@ -38,10 +38,19 @@ dev_dependencies:
   google_sign_in: ^5.0.1
   flutter_facebook_login: ^3.0.0
   firebase_database: ^6.1.2
+  sliver_tools: ^0.2.1
+  bubble_tab_indicator: ^0.1.5
   firebase_storage: ^8.0.3
   cloud_firestore: ^1.0.4
   flutter_spinkit: ^4.1.2
   flutter_svg: ^0.21.0+1
+  form_field_validator: ^1.1.0
+  flutter_swiper_null_safety:
+    git:
+      url: https://github.com/lianyagang/flutter_swiper_null_safety.git
+      ref: feature/flutter_swipter2.0
+
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -61,14 +70,17 @@ flutter:
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
-fonts:
-  - family: Forte
-    fonts:
-      - asset: lib/src/assets/fonts/FORTE.TTF
-  - family: Alegreya
-    fonts:
-      - asset: lib/src/assets/fonts/Alegreya-Regular.ttf
-      - asset: lib/src/assets/fonts/Alegreya-SemiBold.ttf
+  assets:
+    - lib/src/assests/images/
+
+  fonts:
+    - family: Forte
+      fonts:
+        - asset: lib/src/assests/fonts/FORTE.TTF
+    - family: Alegreya
+      fonts:
+        - asset: lib/src/assests/fonts/Alegreya-Regular.ttf
+        - asset: lib/src/assests/fonts/Alegreya-SemiBold.ttf
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
 
