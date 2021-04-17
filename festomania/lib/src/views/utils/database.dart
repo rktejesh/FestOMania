@@ -24,3 +24,36 @@ class DatabaseService {
   }
 }
 
+class EventDatabaseService {
+  final CollectionReference eventCollection =
+  FirebaseFirestore.instance.collection('Events');
+  Future updateEventData(
+      String imageLink,
+      String eventName,
+      String collegeName,
+      String eventCategory,
+      String eventTiming,
+      String description,
+      DateTime startTime,
+      DateTime endTime,
+      String eventLink,
+      String facebookLink,
+      String instagramLink,
+      String twitterLink,
+      ) async {
+    return await eventCollection.add({
+      'imageLink': imageLink,
+      'eventName': eventName,
+      'collegeName': collegeName,
+      'eventCategory': eventCategory,
+      'eventTiming': eventTiming,
+      'description': description,
+      'startTime': startTime,
+      'endTime': endTime,
+      'eventLink': eventLink,
+      'facebookLink': facebookLink,
+      'instagramLink': instagramLink,
+      'twitterLink': twitterLink,
+    });
+  }
+}
