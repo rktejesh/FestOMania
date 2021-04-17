@@ -57,7 +57,7 @@ class _LoginPageState extends State<LoginPage> {
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: const AssetImage(
-                            "lib/src/assests/images/loginpageGraphic.png"),
+                            "lib/src/assets/images/loginpageGraphic.png"),
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -155,7 +155,7 @@ class _LoginPageState extends State<LoginPage> {
                             await auth.signInWithEmailAndPassword(
                                 email: _email, password: _password);
                             Navigator.of(context).pushReplacement(MaterialPageRoute(
-                                builder: (context) => MainPage()));
+                                builder: (context) => MainPageUpcoming()));
                           } on FirebaseAuthException catch (e) {
                             if (e.code == 'invalid-email') {
                               setState(() {

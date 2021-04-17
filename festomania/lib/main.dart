@@ -1,6 +1,5 @@
-import 'package:festomania/src/views/ui/LoadingPage.dart';
-import 'package:festomania/src/views/ui/LoginPage.dart';
-import 'package:festomania/src/views/ui/SignupPage.dart';
+
+import 'package:festomania/src/views/utils/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 void main() async {
@@ -21,8 +20,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
       ),
-      home: LoadingPage(),
-
+      home: App(),
     );
   }
 }

@@ -44,6 +44,7 @@ dev_dependencies:
   cloud_firestore: ^1.0.4
   flutter_spinkit: ^4.1.2
   flutter_svg: ^0.21.0+1
+  material_floating_search_bar: ^0.3.3
   form_field_validator: ^1.1.0
   flutter_swiper_null_safety:
     git:
@@ -71,16 +72,16 @@ flutter:
 
 
   assets:
-    - lib/src/assests/images/
+    - lib/src/assets/images/
 
   fonts:
     - family: Forte
       fonts:
-        - asset: lib/src/assests/fonts/FORTE.TTF
+        - asset: lib/src/assets/fonts/FORTE.TTF
     - family: Alegreya
       fonts:
-        - asset: lib/src/assests/fonts/Alegreya-Regular.ttf
-        - asset: lib/src/assests/fonts/Alegreya-SemiBold.ttf
+        - asset: lib/src/assets/fonts/Alegreya-Regular.ttf
+        - asset: lib/src/assets/fonts/Alegreya-SemiBold.ttf
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
 
