@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:festomania/src/views/ui/ChoicePage.dart';
+import 'package:festomania/src/views/ui/SignupPage.dart';
 import 'package:firebase_core/firebase_core.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
 
 
       ),
-      home: ChoicePage(),
+      home: SignupPage()
     );
   }
 }
