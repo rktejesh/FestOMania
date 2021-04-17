@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:ui';
+import 'package:festomania/src/views/ui/LoginPage.dart';
 import 'package:festomania/src/views/utils/Logo.dart';
 import 'package:festomania/src/views/utils/database.dart';
 import 'package:festomania/src/views/utils/loading.dart';
@@ -248,10 +249,14 @@ class _ChoicePageState extends State<ChoicePage> {
                               color: const Color(0xff1c69f0),
                             ),
                           ),
+                          onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => LoginPage()),               
+                    ),
                         ),
                       ),
                     ),
                   ),
+                  
                   Padding(
                     padding: EdgeInsets.only(top: 20,bottom: 25,right: 45,left: 45),
                     child: SizedBox(
