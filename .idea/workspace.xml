@@ -20,7 +20,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2099e7f2-928e-4f4c-9397-320d91d69309" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/Images/loginpageGraphic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/Images/signuppagegraphic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/2496466-200.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/29a20c67ca2df0b99526e0e8ecc249a6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/Untitled design.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/account_circle-24px.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/alarm_black_24dp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/blank-profile-picture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/blue-programming-competition-custom-template-design-01efe9889793f251eab8080aa652010e_screen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/bookmark_border-24px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/bookmark_border-24px.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding-bootcamp-motion-poster-design-template-eed37e06b3bbfc660c8a6dd06c462820.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/cp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/ctf1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/ctf2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/ctf3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/ctf4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/ctf5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/edit_calendar-24px.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/error_outline-24px.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/github_PNG58.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/humble iiit allahabad cp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/link_black_24dp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/link_black_24dp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/live.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/map.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/mygov46562_1512541016.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/search-24px.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/segment-24px.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/sensors-24px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/sensors-24px.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/technex 21 poster-2021040103 iit bhu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/upload-24px.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/west-24px.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/Reset.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/config.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/ChoicePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/ChoicePage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/LoginPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/LoginPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/MainPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/MainPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/SignupPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/SignupPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
