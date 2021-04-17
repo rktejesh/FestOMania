@@ -37,8 +37,8 @@ class _SignupPageState extends State<SignupPage> {
     user.updateProfile(displayName: _username);
     await user.reload();
     if (user.emailVerified) {
-      await DatabaseService(uid: user.uid).updateUserData(
-          user.displayName, user.email, user.uid, null);
+      await DatabaseService(uid: user.uid)
+          .updateUserData(user.displayName, user.email, user.uid, null);
       timer.cancel();
     }
   }
@@ -74,60 +74,59 @@ class _SignupPageState extends State<SignupPage> {
               Padding(
                 padding: const EdgeInsets.all(23.0),
                 child: TextField(
-                  style: TextStyle(color: Colors.blue),
-                  keyboardType: TextInputType.name,
-                  decoration: InputDecoration(
-                    labelText: 'Username',),
+                    style: TextStyle(color: Colors.blue),
+                    keyboardType: TextInputType.name,
+                    decoration: InputDecoration(
+                      labelText: 'Username',
+                    ),
                     onChanged: (value) {
                       setState(() {
                         _username = value.trim();
                       });
-                    }
-                    ),
+                    }),
               ),
               Padding(
                 padding: const EdgeInsets.all(23.0),
                 child: TextField(
-                  style: TextStyle(color: Colors.blue),
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: InputDecoration(
-                    labelText: 'Email',),
-                  onChanged: (value) {
-                    setState(() {
-                      _email = value.trim();
-                    });
-                  }
-                ),
+                    style: TextStyle(color: Colors.blue),
+                    keyboardType: TextInputType.emailAddress,
+                    decoration: InputDecoration(
+                      labelText: 'Email',
+                    ),
+                    onChanged: (value) {
+                      setState(() {
+                        _email = value.trim();
+                      });
+                    }),
               ),
               Padding(
                 padding: const EdgeInsets.all(23),
                 child: TextField(
-                  style: TextStyle(color: Colors.blue),
-                  keyboardType: TextInputType.visiblePassword,
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    labelText: 'Password',),
+                    style: TextStyle(color: Colors.blue),
+                    keyboardType: TextInputType.visiblePassword,
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      labelText: 'Password',
+                    ),
                     onChanged: (value) {
                       setState(() {
                         _password = value.trim();
                       });
-                    }
-                    ),
+                    }),
               ),
               Padding(
                 padding: const EdgeInsets.all(23),
                 child: TextField(
-                  style: TextStyle(color: Colors.blue),
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    labelText: 'Confirm Password',),
+                    style: TextStyle(color: Colors.blue),
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      labelText: 'Confirm Password',
+                    ),
                     onChanged: (value) {
                       setState(() {
                         _confirmPassword = value.trim();
                       });
-                    }
-
-                ),
+                    }),
               ),
               SizedBox(
                 width: double.infinity,
@@ -141,44 +140,35 @@ class _SignupPageState extends State<SignupPage> {
                       user = auth.currentUser;
                       user.sendEmailVerification();
                       checkEmailVerified();
-                      timer = Timer.periodic(Duration(seconds: 5),
-                              (timer) {
-                            checkEmailVerified();
-                          });
+                      timer = Timer.periodic(Duration(seconds: 5), (timer) {
+                        checkEmailVerified();
+                      });
                       errorText =
-                      "An Email has been sent to $_email please verify";
+                          "An Email has been sent to $_email please verify";
                       _showDialog();
                     } on FirebaseAuthException catch (e) {
-                      if (e.code ==
-                          'email-already-in-use') {
+                      if (e.code == 'email-already-in-use') {
                         loading = false;
                         errorText =
-                        "An account already exists with this email.";
+                            "An account already exists with this email.";
                         _showDialog();
-                      } else if (e.code ==
-                          'invalid-email') {
+                      } else if (e.code == 'invalid-email') {
                         loading = false;
-                        errorText =
-                        "The specified email is invalid";
+                        errorText = "The specified email is invalid";
                         _showDialog();
-                      } else if (e.code ==
-                          'operation-not-allowed') {
+                      } else if (e.code == 'operation-not-allowed') {
                         loading = false;
-                        errorText =
-                        "Invalid Input.";
+                        errorText = "Invalid Input.";
                         _showDialog();
                       } else {
                         loading = false;
-                        errorText =
-                        "Error: Please try again";
+                        errorText = "Error: Please try again";
                         _showDialog();
                       }
                     }
                   },
-
                   child: Text(
                     'Signup',
-
                   ),
                 ),
               ),
