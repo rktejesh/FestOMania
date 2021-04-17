@@ -72,7 +72,7 @@ class _ResetScreenState extends State<ResetScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              RaisedButton(
+              ElevatedButton(
                 child: Text('Send Request',
                 style: TextStyle(fontSize: 20, color: Colors.white),),
                 onPressed: () {
@@ -84,7 +84,7 @@ class _ResetScreenState extends State<ResetScreen> {
                   title: Text("Reset Password"),
                   content: Text("An email has been sent to $_email please verify"),
                   actions: <Widget>[
-                    FlatButton(
+                    TextButton(
                       onPressed: () {
                         Navigator.of(ctx).pop();
                       },
@@ -94,7 +94,6 @@ class _ResetScreenState extends State<ResetScreen> {
                 ),
               );
                 },
-               color: Theme.of(context).accentColor,
               ),
 
             ],

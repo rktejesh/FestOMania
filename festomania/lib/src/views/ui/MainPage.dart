@@ -5,7 +5,7 @@ import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
 import 'package:sliver_tools/sliver_tools.dart';
 import 'config.dart';
-
+import 'package:flutter_svg/flutter_svg.dart';
 class MainPageUpcoming extends StatefulWidget {
   @override
   _MainPageUpcomingState createState() => _MainPageUpcomingState();

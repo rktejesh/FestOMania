@@ -20,70 +20,87 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2099e7f2-928e-4f4c-9397-320d91d69309" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/Images/loginpageGraphic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/Images/signuppagegraphic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/2496466-200.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/29a20c67ca2df0b99526e0e8ecc249a6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/Untitled design.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/account_circle-24px.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/alarm_black_24dp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/blank-profile-picture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/blue-programming-competition-custom-template-design-01efe9889793f251eab8080aa652010e_screen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/bookmark_border-24px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/bookmark_border-24px.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding-bootcamp-motion-poster-design-template-eed37e06b3bbfc660c8a6dd06c462820.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/cp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/ctf1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/ctf2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/ctf3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/ctf4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/ctf5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/edit_calendar-24px.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/error_outline-24px.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/facebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/github_PNG58.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/humble iiit allahabad cp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/link_black_24dp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/link_black_24dp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/live.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/map.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/mygov46562_1512541016.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/search-24px.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/segment-24px.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/sensors-24px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/sensors-24px.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/technex 21 poster-2021040103 iit bhu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/upload-24px.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/assests/images/west-24px.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/Reset.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/config.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/AboutUs.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/CodingEvent.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/CtfEvent.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/Hackathon.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/RegisterClgEvent.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/TechnicalTalks.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/utils/AppDrawer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/utils/LandingPage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/festomania/lib/src/views/utils/theme.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/festomania/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/ChoicePage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/ChoicePage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/fonts/Alegreya-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/fonts/Alegreya-Black.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/fonts/Alegreya-BlackItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/fonts/Alegreya-BlackItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/fonts/Alegreya-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/fonts/Alegreya-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/fonts/Alegreya-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/fonts/Alegreya-BoldItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/fonts/Alegreya-ExtraBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/fonts/Alegreya-ExtraBold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/fonts/Alegreya-ExtraBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/fonts/Alegreya-ExtraBoldItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/fonts/Alegreya-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/fonts/Alegreya-Italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/fonts/Alegreya-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/fonts/Alegreya-Medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/fonts/Alegreya-MediumItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/fonts/Alegreya-MediumItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/fonts/Alegreya-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/fonts/Alegreya-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/fonts/Alegreya-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/fonts/Alegreya-SemiBold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/fonts/Alegreya-SemiBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/fonts/Alegreya-SemiBoldItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/fonts/FORTE.TTF" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/fonts/FORTE.TTF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/2496466-200.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/2496466-200.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/29a20c67ca2df0b99526e0e8ecc249a6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/29a20c67ca2df0b99526e0e8ecc249a6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/Untitled design.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/Untitled design.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/account_circle-24px.svg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/account_circle-24px.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/alarm_black_24dp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/alarm_black_24dp.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/blank-profile-picture.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/blank-profile-picture.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/blue-programming-competition-custom-template-design-01efe9889793f251eab8080aa652010e_screen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/blue-programming-competition-custom-template-design-01efe9889793f251eab8080aa652010e_screen.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/bookmark_border-24px.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/bookmark_border-24px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/bookmark_border-24px.svg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/bookmark_border-24px.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding-bootcamp-motion-poster-design-template-eed37e06b3bbfc660c8a6dd06c462820.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/coding-bootcamp-motion-poster-design-template-eed37e06b3bbfc660c8a6dd06c462820.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding1.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/coding1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/coding2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/coding3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding4.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/coding4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding5.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/coding5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/coding6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/coding7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding8.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/coding8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/coding9.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/coding9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/cp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/cp.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/ctf1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/ctf1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/ctf2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/ctf2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/ctf3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/ctf3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/ctf4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/ctf4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/ctf5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/ctf5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/download.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/download.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/edit_calendar-24px.svg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/edit_calendar-24px.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/error_outline-24px.svg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/error_outline-24px.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/facebook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/github_PNG58.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/github_PNG58.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/hackathon1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/hackathon2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/hackathon3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/hackathon4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/hackathon5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/hackathon6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/hackathon7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/hackathon8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/hackathon8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/humble iiit allahabad cp.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/humble iiit allahabad cp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/link_black_24dp.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/link_black_24dp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/link_black_24dp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/link_black_24dp.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/live.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/live.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/loginpageGraphic.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/loginpageGraphic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/map.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/map.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/mygov46562_1512541016.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/mygov46562_1512541016.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/search-24px.svg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/search-24px.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/search.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/segment-24px.svg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/segment-24px.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/sensors-24px.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/sensors-24px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/sensors-24px.svg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/sensors-24px.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/signuppagegraphic.png" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/signuppagegraphic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/technex 21 poster-2021040103 iit bhu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/technex 21 poster-2021040103 iit bhu.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/upload-24px.svg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/upload-24px.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/assests/images/west-24px.svg" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/assets/images/west-24px.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/LoadingPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/LoadingPage.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/LoginPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/LoginPage.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/MainPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/MainPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/SignupPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/SignupPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festomania/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festomania/lib/src/views/ui/Reset.dart" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/lib/src/views/ui/Reset.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/festomania/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
