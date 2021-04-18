@@ -3,7 +3,6 @@ import 'package:festomania/src/views/utils/loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:timeago/timeago.dart';
 
 class EventPage extends StatelessWidget {
   final String eventId;
@@ -16,9 +15,7 @@ class EventPage extends StatelessWidget {
           if(!snapshot.hasData) {
             return Loading();
           }
-
           var document = snapshot.data;
-          String starttime = timeago.format(document["startTime"].toDate();
           return Scaffold(
             backgroundColor: const Color(0xffedeff8),
             body: SingleChildScrollView(
@@ -67,7 +64,7 @@ class EventPage extends StatelessWidget {
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Text("Date:" + , 'en_short') + " - " + document["endTime"].toString(),
+                              child: Text("Date:" + document["startTime"].toDate().toString() + " - " + document["endTime"].toDate().toString(),
                                 style: TextStyle(
                                   fontSize: 20,
                                 ),
