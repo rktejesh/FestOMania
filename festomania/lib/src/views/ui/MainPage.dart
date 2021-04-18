@@ -224,6 +224,8 @@ class _MainPageUpcomingState extends State<MainPageUpcoming>
                                   Radius.circular(15.0),
                                 ),
                               ),
+                              height: 250,
+                              width: double.infinity,
                             ),
                           );
                         },
