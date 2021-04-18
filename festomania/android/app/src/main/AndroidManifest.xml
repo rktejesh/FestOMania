@@ -2,7 +2,7 @@
     package="com.example.festomania">
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="festomania"
+        android:label="FestOMania"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
