@@ -1,7 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
+import 'package:festomania/src/views/utils/loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class EventPage extends StatelessWidget {
   final String eventId;
@@ -12,32 +13,156 @@ class EventPage extends StatelessWidget {
         stream: FirebaseFirestore.instance.collection('Events').doc(eventId).snapshots(),
         builder: (context, snapshot) {
           if(!snapshot.hasData) {
-            return new CircularProgressIndicator();
+            return Loading();
           }
           var document = snapshot.data;
           return Scaffold(
             backgroundColor: const Color(0xffedeff8),
             body: SingleChildScrollView(
               child: SafeArea(
-                child: Column(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: NetworkImage(document["imageLink"]),
-                            fit: BoxFit.fill),
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(25.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: NetworkImage(document["imageLink"]),
+                              fit: BoxFit.fill),
+                          borderRadius: const BorderRadius.all(
+                            Radius.circular(25.0),
+                          ),
+                        ),
+                        height: 250,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                  document["eventName"],
+                                style: TextStyle(
+                                  fontSize: 45,
+                                  fontWeight: FontWeight.bold
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                  document["collegeName"],
+                                style: TextStyle(
+                                    fontSize: 20,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text("Date:" + document["startTime"].toDate().toString() + " - " + document["endTime"].toDate().toString(),
+                                style: TextStyle(
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text("Category: "+document["eventCategory"],
+                                style: TextStyle(
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text("About",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(document["description"],
+                                style: TextStyle(
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                    ),
-                    Text(document["eventName"]),
-                    Text(document["collegeName"]),
-                    Text("Date:"),
-                    Text("Category:"+document["eventCategory"]),
-                    Text("About"),
-                    Text(document["description"]),
-                  ],
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          OutlinedButton(
+                            child: SvgPicture.string(
+                              instagram,
+                              height: 30,
+                              width: 30,
+                              fit: BoxFit.fill,
+                            ),
+                            style: ButtonStyle(
+                              padding: MaterialStateProperty.all(EdgeInsets.only(
+                                  top: 10, bottom: 10, left: 20, right: 20)),
+                              backgroundColor: MaterialStateProperty.all(
+                                  Colors.white),
+                              shape: MaterialStateProperty.all(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(15))),
+                            ),
+                            onPressed:(){
+                              _launchURL(document["instagramLink"]);
+                            },
+                          ),
+                          OutlinedButton(
+                            child: SvgPicture.string(
+                              facebook,
+                              height: 30,
+                              width: 30,
+                              fit: BoxFit.fill,
+                            ),
+                            style: ButtonStyle(
+                              padding: MaterialStateProperty.all(EdgeInsets.only(
+                                  top: 10, bottom: 10, left: 20, right: 20)),
+                              backgroundColor: MaterialStateProperty.all(
+                                  Colors.white),
+                              shape: MaterialStateProperty.all(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(15))),
+                            ),
+                            onPressed: () {
+                              _launchURL(document["facebookLink"]);
+                            },
+                          ),
+                          OutlinedButton(
+                            child: Image.asset(
+                              "lib/src/assets/images/iconfinder_twitter_circle_294709.png",
+                              height: 30,
+                              width: 30,
+                            ),
+                            style: ButtonStyle(
+                              padding: MaterialStateProperty.all(EdgeInsets.only(
+                                  top: 10, bottom: 10, left: 20, right: 20)),
+                              backgroundColor: MaterialStateProperty.all(
+                                  Colors.white),
+                              shape: MaterialStateProperty.all(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(15))),
+                            ),
+                            onPressed: (){
+                              _launchURL(document["twitterLink"]);
+                            },
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -47,17 +172,14 @@ class EventPage extends StatelessWidget {
   }
 }
 
-const String _svg_9kvwt3 =
-    '<svg viewBox="0.0 0.0 52.0 52.0" ><path  d="M 0 0 L 52 0 L 52 52 L 0 52 L 0 0 Z" fill="none" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_7p1vlt =
-    '<svg viewBox="6.5 6.5 37.9 37.9" ><path transform="translate(3.5, 3.5)" d="M 30.08333015441895 26.83333206176758 L 28.37166595458984 26.83333206176758 L 27.76499938964844 26.24833297729492 C 29.88833236694336 23.7783317565918 31.16666603088379 20.57166481018066 31.16666603088379 17.08333206176758 C 31.16666603088379 9.304999351501465 24.86166572570801 3 17.08333206176758 3 C 9.304999351501465 3 3 9.304999351501465 3 17.08333206176758 C 3 24.86166572570801 9.304999351501465 31.16666603088379 17.08333206176758 31.16666603088379 C 20.57166481018066 31.16666603088379 23.7783317565918 29.88833236694336 26.24833297729492 27.76499938964844 L 26.83333206176758 28.37166595458984 L 26.83333206176758 30.08333015441895 L 37.66666793823242 40.89500045776367 L 40.89500045776367 37.66666793823242 L 30.08333015441895 26.83333206176758 Z M 17.08333206176758 26.83333206176758 C 11.68833255767822 26.83333206176758 7.333333492279053 22.47833061218262 7.333333492279053 17.08333206176758 C 7.333333492279053 11.68833255767822 11.68833255767822 7.333333492279053 17.08333206176758 7.333333492279053 C 22.47833061218262 7.333333492279053 26.83333206176758 11.68833255767822 26.83333206176758 17.08333206176758 C 26.83333206176758 22.47833061218262 22.47833061218262 26.83333206176758 17.08333206176758 26.83333206176758 Z" fill="#3f4239" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_i3tzy6 =
-    '<svg viewBox="4.3 10.7 36.9 24.0" ><path transform="translate(2.29, 5.71)" d="M 14.8997917175293 28.99958038330078 L 17.49817848205566 26.58248138427734 L 9.058027267456055 18.71404647827148 L 38.85654449462891 18.71404647827148 L 38.85654449462891 15.28553581237793 L 9.058027267456055 15.28553581237793 L 17.5166072845459 7.417099475860596 L 14.8997917175293 4.999999523162842 L 1.999999761581421 16.99979209899902 L 14.8997917175293 28.99958038330078 Z" fill="#000000" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_xh7bu1 =
-    '<svg viewBox="0.0 0.0 36.0 36.0" ><path  d="M 0 0 L 36 0 L 36 36 L 0 36 L 0 0 Z" fill="none" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_wuwfgd =
-    '<svg viewBox="3.8 3.5 28.4 28.7" ><path transform="translate(1.8, 1.67)" d="M 30.39912796020508 7.353917598724365 L 23.86732864379883 1.859999895095825 L 22.03558540344238 4.037641525268555 L 28.56738090515137 9.531559944152832 L 30.39912796020508 7.353917598724365 Z M 10.34934425354004 4.037641525268555 L 8.53179931640625 1.860000014305115 L 2 7.339685916900635 L 3.831743478775024 9.517326354980469 L 10.34934425354004 4.037641525268555 Z M 16.90954208374023 10.59903144836426 L 14.77960872650146 10.59903144836426 L 14.77960872650146 19.13880157470703 L 21.52439880371094 23.19519233703613 L 22.5893669128418 21.44454002380371 L 16.90954208374023 18.07133102416992 L 16.90954208374023 10.59903144836426 Z M 16.19956207275391 4.905851364135742 C 9.142380714416504 4.905851364135742 3.419956207275391 10.64173126220703 3.419956207275391 17.71550559997559 C 3.419956207275391 24.78927993774414 9.128181457519531 30.52515983581543 16.19956207275391 30.52515983581543 C 23.25674629211426 30.52515983581543 28.97916984558105 24.78927993774414 28.97916984558105 17.71550559997559 C 28.97916984558105 10.64173126220703 23.25674629211426 4.905851364135742 16.19956207275391 4.905851364135742 Z M 16.19956207275391 27.6785717010498 C 10.70433235168457 27.6785717010498 6.259869575500488 23.22365760803223 6.259869575500488 17.71550559997559 C 6.259869575500488 12.20735645294189 10.70433235168457 7.75244140625 16.19956207275391 7.75244140625 C 21.69479751586914 7.75244140625 26.13925933837891 12.20735454559326 26.13925933837891 17.71550559997559 C 26.13925933837891 23.22365760803223 21.69479751586914 27.6785717010498 16.19956207275391 27.6785717010498 Z" fill="#000000" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_57e4uv =
-    '<svg viewBox="0.0 0.0 42.0 42.0" ><path  d="M 0 0 L 42 0 L 42 42 L 0 42 L 0 0 Z" fill="none" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_z60tpj =
-    '<svg viewBox="3.7 11.7 34.6 18.6" ><path transform="translate(1.72, 4.71)" d="M 5.283766269683838 16.29255104064941 C 5.283766269683838 13.11449813842773 7.686100482940674 10.53116798400879 10.64148998260498 10.53116798400879 L 17.55468368530273 10.53116798400879 L 17.55468368530273 7.000000476837158 L 10.64148998260498 7.000000476837158 C 5.871387481689453 7.000000476837158 2 11.16306304931641 2 16.29255104064941 C 2 21.42204093933105 5.871387481689453 25.58510398864746 10.64148998260498 25.58510398864746 L 17.55468368530273 25.58510398864746 L 17.55468368530273 22.05393409729004 L 10.64148998260498 22.05393409729004 C 7.686100482940674 22.05393409729004 5.283766269683838 19.47060394287109 5.283766269683838 16.29255104064941 Z M 12.36978721618652 18.15106201171875 L 26.1961727142334 18.15106201171875 L 26.1961727142334 14.43404197692871 L 12.36978721618652 14.43404197692871 L 12.36978721618652 18.15106201171875 Z M 27.92447280883789 7.000000476837158 L 21.01128005981445 7.000000476837158 L 21.01128005981445 10.53116798400879 L 27.92447280883789 10.53116798400879 C 30.87985801696777 10.53116798400879 33.28219223022461 13.11449813842773 33.28219223022461 16.29255104064941 C 33.28219223022461 19.47060394287109 30.87986183166504 22.05393409729004 27.92447280883789 22.05393409729004 L 21.01128005981445 22.05393409729004 L 21.01128005981445 25.58510398864746 L 27.92447280883789 25.58510398864746 C 32.69457244873047 25.58510398864746 36.56595993041992 21.42204093933105 36.56595993041992 16.29255104064941 C 36.56595993041992 11.16306304931641 32.69457244873047 7.000000476837158 27.92447280883789 7.000000476837158 Z" fill="#000000" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+
+
+void _launchURL(String _url) async =>
+    await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';
+
+
+const String instagram =
+'<svg height="511pt" viewBox="0 0 511 511.9" width="511pt" xmlns="http://www.w3.org/2000/svg"><path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/></svg>';
+
+const String facebook =
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path fill="#1877f2" d="M1024,512C1024,229.23016,794.76978,0,512,0S0,229.23016,0,512c0,255.554,187.231,467.37012,432,505.77777V660H302V512H432V399.2C432,270.87982,508.43854,200,625.38922,200,681.40765,200,740,210,740,210V336H675.43713C611.83508,336,592,375.46667,592,415.95728V512H734L711.3,660H592v357.77777C836.769,979.37012,1024,767.554,1024,512Z"/><path fill="#fff" d="M711.3,660,734,512H592V415.95728C592,375.46667,611.83508,336,675.43713,336H740V210s-58.59235-10-114.61078-10C508.43854,200,432,270.87982,432,399.2V512H302V660H432v357.77777a517.39619,517.39619,0,0,0,160,0V660Z"/></svg>';

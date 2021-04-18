@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:festomania/src/views/utils/loading.dart';
+import 'package:festomania/src/views/utils/loading.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'config.dart';
 import 'package:flutter/material.dart';
@@ -165,14 +166,14 @@ class _MainPageUpcomingState extends State<MainPageUpcoming>
                                       bottom: 20,
                                       left: 20,
                                       right: 20),
-                                  height: 240,
+                                  height: 350,
                                   width: double.infinity,
                                   child: Container(
                                     child: Column(
                                       children: [
                                         InkWell(
                                           child: Container(
-                                            height: 300,
+                                            height: 200,
                                             decoration: BoxDecoration(
                                               boxShadow: [
                                                 BoxShadow(
