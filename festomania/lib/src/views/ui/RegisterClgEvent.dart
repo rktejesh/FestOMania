@@ -138,7 +138,7 @@ class _RegisterClgEventState extends State<RegisterClgEvent> {
                                             color: Colors.white,
                                           )),
                                       labelStyle: TextStyle(
-                                          fontSize: 19,
+                                          fontSize: 16,
                                           color: Colors.white
                                       )
                                   ),
@@ -190,7 +190,7 @@ class _RegisterClgEventState extends State<RegisterClgEvent> {
                                             color: Colors.white,
                                           )),
                                       labelStyle:
-                                      TextStyle(fontSize: 19, color: Colors.white)),
+                                      TextStyle(fontSize: 16, color: Colors.white)),
                                   onChanged: (value) {
                                     setState(() {
                                       _password = value.trim();
@@ -237,7 +237,7 @@ class _RegisterClgEventState extends State<RegisterClgEvent> {
                                             color: Colors.white,
                                           )),
                                       labelStyle: TextStyle(
-                                          fontSize: 19,
+                                          fontSize: 16,
                                           color: Colors.white
                                       )
                                   ),
@@ -285,7 +285,7 @@ class _RegisterClgEventState extends State<RegisterClgEvent> {
                                             color: Colors.white,
                                           )),
                                       labelStyle: TextStyle(
-                                          fontSize: 19,
+                                          fontSize: 16,
                                           color: Colors.white
                                       )
                                   ),
@@ -321,7 +321,7 @@ class _RegisterClgEventState extends State<RegisterClgEvent> {
                                           borderSide: BorderSide(
                                             color: Colors.white,
                                           )),
-                                      labelStyle: TextStyle(fontSize: 19, color: Colors.white)),
+                                      labelStyle: TextStyle(fontSize: 16, color: Colors.white)),
                                   format: format,
                                   onShowPicker: (context, currentValue) async {
                                     final date = await showDatePicker(
@@ -371,7 +371,7 @@ class _RegisterClgEventState extends State<RegisterClgEvent> {
                                           )),
 
                                       labelStyle:
-                                      TextStyle(fontSize: 19, color: Colors.white)),
+                                      TextStyle(fontSize: 16, color: Colors.white)),
                                   format: format,
                                   onShowPicker: (context, currentValue) async {
                                     final date = await showDatePicker(
@@ -405,7 +405,7 @@ class _RegisterClgEventState extends State<RegisterClgEvent> {
                                         dropdownColor: const Color(0xff5c6bc0),
                                         style: TextStyle(
                                             color: Colors.white,
-                                            fontSize: 19,
+                                            fontSize: 16,
                                             fontFamily: 'Alegreya'
                                         ),
                                         value: dropdownValue,
@@ -465,7 +465,7 @@ class _RegisterClgEventState extends State<RegisterClgEvent> {
                                             color: Colors.white,
                                           )),
                                       labelStyle: TextStyle(
-                                          fontSize: 19,
+                                          fontSize: 16,
                                           color: Colors.white
                                       )
                                   ),
@@ -513,7 +513,7 @@ class _RegisterClgEventState extends State<RegisterClgEvent> {
                                             color: Colors.white,
                                           )),
                                       labelStyle: TextStyle(
-                                          fontSize: 19,
+                                          fontSize: 16,
                                           color: Colors.white
                                       )
                                   ),
@@ -561,7 +561,7 @@ class _RegisterClgEventState extends State<RegisterClgEvent> {
                                             color: Colors.white,
                                           )),
                                       labelStyle: TextStyle(
-                                          fontSize: 19,
+                                          fontSize: 16,
                                           color: Colors.white
                                       )
                                   ),
@@ -609,7 +609,7 @@ class _RegisterClgEventState extends State<RegisterClgEvent> {
                                             color: Colors.white,
                                           )),
                                       labelStyle: TextStyle(
-                                          fontSize: 19,
+                                          fontSize: 16,
                                           color: Colors.white
                                       )
                                   ),
@@ -657,7 +657,7 @@ class _RegisterClgEventState extends State<RegisterClgEvent> {
                                             color: Colors.white,
                                           )),
                                       labelStyle: TextStyle(
-                                          fontSize: 19,
+                                          fontSize: 16,
                                           color: Colors.white
                                       )
                                   ),
@@ -701,11 +701,11 @@ class _RegisterClgEventState extends State<RegisterClgEvent> {
                               SizedBox(
                                 width: double.infinity,
                                 child: Padding(
-                                  padding: EdgeInsets.only(top: 20, bottom: 20, left: 60, right: 60),
+                                  padding: EdgeInsets.only(top: 20, bottom: 10, left: 75, right: 75),
                                   child: Container(
                                     decoration: BoxDecoration(
                                         borderRadius: const BorderRadius.all(
-                                          Radius.circular(25.0),
+                                          Radius.circular(15.0),
                                         ),
                                         boxShadow: [
                                           BoxShadow(
@@ -752,13 +752,13 @@ class _RegisterClgEventState extends State<RegisterClgEvent> {
                                         backgroundColor:
                                         MaterialStateProperty.all<Color>(Colors.white),
                                         shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(20))),
+                                            borderRadius: BorderRadius.circular(15))),
                                       ),
                                       child: Text(
                                         'Register',
                                         style: TextStyle(
                                           fontFamily: 'Alegreya',
-                                          fontSize: 27,
+                                          fontSize: 28,
                                           color: const Color(0xff1c69f0),
                                         ),
                                       ),
