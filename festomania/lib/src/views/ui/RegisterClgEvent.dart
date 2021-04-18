@@ -414,7 +414,7 @@ class _RegisterClgEventState extends State<RegisterClgEvent> {
                                             dropdownValue = newValue;
                                           });
                                         },
-                                        items: <String>['Hackathon', 'CTF Events', 'Technical Talks', 'Coding Events']
+                                        items: <String>['Hackathon', 'CTF Events', 'Technical Talks', 'Coding Events', 'Technical Talk Collection', 'Technical Talk Live']
                                             .map<DropdownMenuItem<String>>((String value) {
                                           return DropdownMenuItem<String>(
                                             value: value,
