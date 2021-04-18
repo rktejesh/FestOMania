@@ -21,6 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2099e7f2-928e-4f4c-9397-320d91d69309" name="Default Changelist" comment="">
 <<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/FestOMania-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FestOMania-1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -45,6 +48,7 @@
       <change beforePath="$PROJECT_DIR$/festomania/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/festomania/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/festomania/pubspec.yaml" afterDir="false" />
 >>>>>>> d87755395469be6a2845cd6c24672e6cbbdf2ebe
+>>>>>>> 3790e5658042600899012c065d39fb75f550f36b
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

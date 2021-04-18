@@ -32,6 +32,7 @@ class _LoginPageState extends State<LoginPage> {
               filter: ImageFilter.blur(sigmaX: 6, sigmaY: 6));
         });
   }
+
   final FirebaseAuth auth = FirebaseAuth.instance;
   GlobalKey<FormState> formkey = GlobalKey<FormState>();
   String _email = "";
@@ -41,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       backgroundColor: const Color(0xff5c6bc0),
       body: SafeArea(
-        top: false,
+        top: true,
         child: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
@@ -52,8 +53,8 @@ class _LoginPageState extends State<LoginPage> {
                 Align(
                   alignment: Alignment.topRight,
                   child: Container(
-                    width: 230,
-                    height: 230,
+                    width: 200,
+                    height: 200,
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: const AssetImage(
@@ -69,7 +70,7 @@ class _LoginPageState extends State<LoginPage> {
                     'Welcome\nback',
                     style: TextStyle(
                       fontFamily: 'Alegreya',
-                      fontSize: 40,
+                      fontSize: 36,
                       color: const Color(0xffffffff),
                     ),
                     textAlign: TextAlign.left,
@@ -87,7 +88,7 @@ class _LoginPageState extends State<LoginPage> {
                           keyboardType: TextInputType.emailAddress,
                           decoration: InputDecoration(
                               contentPadding: EdgeInsets.only(
-                                  left: 30, right: 20, top: 20, bottom: 20),
+                                  left: 30, right: 20, top: 10, bottom: 10),
                               labelText: 'Username/Email',
                               focusedBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(40),
@@ -115,7 +116,7 @@ class _LoginPageState extends State<LoginPage> {
                                     color: Colors.white,
                                   )),
                               labelStyle:
-                              TextStyle(fontSize: 26, color: Colors.white)),
+                              TextStyle(fontSize: 16, color: Colors.white)),
                           onChanged: (value) {
                             setState(() {
                               _email = value.trim();
@@ -130,14 +131,14 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       Padding(
                         padding: const EdgeInsets.only(
-                            top: 30, bottom: 30, right: 15, left: 15),
+                            top: 20, bottom: 5, right: 15, left: 15),
                         child: TextFormField(
                           style: TextStyle(color: Colors.white),
                           keyboardType: TextInputType.visiblePassword,
                           obscureText: true,
                           decoration: InputDecoration(
                               contentPadding: EdgeInsets.only(
-                                  left: 30, right: 20, top: 20, bottom: 20),
+                                  left: 30, right: 20, top: 10, bottom: 10),
                               labelText: 'Password',
                               focusedBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(40),
@@ -165,7 +166,7 @@ class _LoginPageState extends State<LoginPage> {
                                     color: Colors.white,
                                   )),
                               labelStyle:
-                              TextStyle(fontSize: 26, color: Colors.white)),
+                              TextStyle(fontSize: 16, color: Colors.white)),
                           onChanged: (value) {
                             setState(() {
                               _password = value.trim();
@@ -182,11 +183,11 @@ class _LoginPageState extends State<LoginPage> {
                 Container(
                   alignment: Alignment.centerRight,
                   padding:
-                  const EdgeInsets.only(bottom: 30, right: 15, left: 15),
+                  const EdgeInsets.only(bottom: 3, right: 15, left: 15),
                   child: InkWell(
                     child: TextButton(
                       child: Text('Forgot Password?',
-                        style: TextStyle(fontSize: 20, color: Colors.white),),
+                        style: TextStyle(fontSize: 15, color: Colors.white),),
                       onPressed: () => Navigator.of(context).push(
                         MaterialPageRoute(builder: (context) => ResetScreen()),
                       ),
@@ -197,11 +198,11 @@ class _LoginPageState extends State<LoginPage> {
                   width: double.infinity,
                   child: Padding(
                     padding: EdgeInsets.only(
-                        top: 20, bottom: 20, left: 60, right: 60),
+                        top: 20, bottom: 20, left: 75, right: 75),
                     child: Container(
                       decoration: BoxDecoration(
                           borderRadius: const BorderRadius.all(
-                            Radius.circular(25.0),
+                            Radius.circular(15.0),
                           ),
                           boxShadow: [
                             BoxShadow(
@@ -248,18 +249,18 @@ class _LoginPageState extends State<LoginPage> {
                         },
                         style: ButtonStyle(
                           padding: MaterialStateProperty.all(EdgeInsets.only(
-                              left: 10, bottom: 5, top: 5, right: 10)),
+                              left: 40,right: 40)),
                           backgroundColor:
                           MaterialStateProperty.all<Color>(Colors.white),
                           shape: MaterialStateProperty.all(
                               RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(25))),
+                                  borderRadius: BorderRadius.circular(15))),
                         ),
                         child: Text(
                           'Login',
                           style: TextStyle(
                             fontFamily: 'Alegreya',
-                            fontSize: 35,
+                            fontSize: 28,
                             color: const Color(0xff1c69f0),
                           ),
                         ),
