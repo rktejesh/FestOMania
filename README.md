@@ -10,3 +10,9 @@ Also, It helps colleges in promoting their tech events across the nation.
 You can view our Presentation through below link :
 
 https://drive.google.com/file/d/1itKLv3aP_TK8BjGGhwnJIJCD6mUhW4P8/view?usp=sharing
+
+![image](https://user-images.githubusercontent.com/73354337/122408985-68820300-cfa0-11eb-8e42-a421ff991404.png)
+![image](https://user-images.githubusercontent.com/73354337/122409221-97987480-cfa0-11eb-92c3-7cd77dd24b78.png)
+![image](https://user-images.githubusercontent.com/73354337/122409413-bd257e00-cfa0-11eb-9d3e-a534abd40d72.png)
+![image](https://user-images.githubusercontent.com/73354337/122409432-c31b5f00-cfa0-11eb-9b85-dc0ff1e186c1.png)
+![image](https://user-images.githubusercontent.com/73354337/122409459-ca426d00-cfa0-11eb-9355-c91927536319.png)
